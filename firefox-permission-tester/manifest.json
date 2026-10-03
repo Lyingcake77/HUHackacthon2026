@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Alt Text Reader",
+  "version": "1.0.0",
+  "description": "Reads alt text from the current page when the popup button is clicked.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "alt-text-reader@example.com",
+      "strict_min_version": "115.0"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_title": "Open Alt Text Reader"
+  },
+  "sidebar_action": {
+    "default_title": "Alt Text Reader",
+    "default_panel": "popup.html"
+  }
+}

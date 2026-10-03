@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alt Text Reader</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Alt Text Reader</h1>
+      <p class="subtitle">Read the accessible alt text from the current page with one click.</p>
+
+      <div class="toolbar">
+        <button id="read-alt-text" type="button">Read alt text</button>
+        <button id="next-alt-text" type="button" disabled>Next alt text</button>
+        <button id="clear-results" class="secondary" type="button">Clear</button>
+      </div>
+
+      <div id="summary" class="summary">Ready. Click to read alt text from the active page.</div>
+
+      <section>
+        <h2>Results</h2>
+        <ul id="results" aria-live="polite"></ul>
+      </section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
